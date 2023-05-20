@@ -17,7 +17,7 @@ import java.util.logging.Logger;
  *
  * @author Student
  */
-public class Lab3 {
+public class LAB3 {
     public static void main(String[] args){
         try {
             FileOutputStream file = new FileOutputStream("data.dat");
@@ -27,9 +27,9 @@ public class Lab3 {
             output.writeDouble(65.5);
             output.writeChar('A');
         } catch (FileNotFoundException ex) {
-            Logger.getLogger(Lab3.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(LAB3.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
-            Logger.getLogger(Lab3.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(LAB3.class.getName()).log(Level.SEVERE, null, ex);
         }
         try {
             FileInputStream file = new FileInputStream("data.dat");
@@ -39,9 +39,9 @@ public class Lab3 {
             System.out.println(input.readDouble());
             System.out.println(input.readChar());
         } catch (FileNotFoundException ex) {
-            Logger.getLogger(Lab3.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(LAB3.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
-            Logger.getLogger(Lab3.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(LAB3.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 }
